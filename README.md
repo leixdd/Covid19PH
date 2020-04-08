@@ -12,6 +12,13 @@
    * [Philippines Covid Official Website](http://www.covid19.gov.ph/)
    * [Philippines Department of Health](https://www.doh.gov.ph/2019-nCoV)
    
+   
+## Stack
+    
+   * Node.js
+   * Vue.js
+   * Vuetify
+   
 ----------
 
 ## Project setup
