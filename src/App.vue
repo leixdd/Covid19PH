@@ -22,7 +22,7 @@
                     </div>
 
                     <v-avatar class="ma-3" size="125" tile>
-                      A
+                      <span :class="ph_stat.src"></span>
                     </v-avatar>
                   </div>
                 </v-card>
@@ -55,22 +55,33 @@ export default {
       {
         title : `Today's COVID-19 Cases`,
         data: 106,
-        src: "https://cdn.vuetifyjs.com/images/cards/foster.jpg",
+        src: "mdi mdi-account-alert display-4",
       },
       {
         title : `Total COVID-19 Cases in the Philippines`,
         data: 3870,
-        src: "https://cdn.vuetifyjs.com/images/cards/foster.jpg",
+        src: "mdi mdi-account-group display-4",
       },
       {
         title : `Number Active Patients`,
         data: 3592,
-        src: "https://cdn.vuetifyjs.com/images/cards/foster.jpg",
+        src: "mdi mdi-account-multiple-plus display-4",
       },
       {
         title : `Total Number of Recovered Patients`,
         data: 96,
-        src: "https://cdn.vuetifyjs.com/images/cards/foster.jpg",
+        src: "mdi mdi-account-heart display-4",
+      },
+
+      {
+        title : `Today's Deaths`,
+        data: 5,
+        src: "mdi mdi-shield-cross display-4",
+      },
+      {
+        title : `Total Number of Deaths`,
+        data: 182,
+        src: "mdi mdi-grave-stone display-4",
       },
     ],
     ph_: {
@@ -87,11 +98,6 @@ export default {
       deathsPerOneMillion: 2,
       tests: 24500,
       testsPerOneMillion: 224
-    },
-    item: {
-      src: "https://cdn.vuetifyjs.com/images/cards/foster.jpg",
-      title: "Supermodel",
-      artist: "Foster the People"
     }
   }),
 
