@@ -4,6 +4,16 @@
 
     Developed By: Lei
 
+## Resources
+    
+   * [NovelCovidAPI](https://github.com/NovelCOVID/API)
+   * [WorldMeters](https://www.worldometers.info/coronavirus/?)
+   * [University of the Philippines COVID tracker](https://endcov.ph/)
+   * [Philippines Covid Official Website](http://www.covid19.gov.ph/)
+   * [Philippines Department of Health](https://www.doh.gov.ph/2019-nCoV)
+   
+----------
+
 ## Project setup
 ```
 npm install
