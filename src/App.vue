@@ -9,33 +9,20 @@
         <v-row>
           <v-col cols="12" md="8">
             <v-row>
-              <v-col cols="12" md="6">
-                <v-card :color="item.color" dark>
+              <v-col 
+              v-for="(ph_stat, index) in ph_stats"
+              :key="index"
+              cols="12" md="6">
+                <v-card dark shaped="true">
                   <div class="d-flex flex-no-wrap justify-space-between">
                     <div>
-                      <v-card-title class="headline" v-text="item.title"></v-card-title>
+                      <v-card-title class="display-3 font-weight-black" v-text="ph_stat.data"></v-card-title>
 
-                      <v-card-subtitle v-text="item.artist"></v-card-subtitle>
+                      <v-card-subtitle v-text="ph_stat.title"></v-card-subtitle>
                     </div>
 
                     <v-avatar class="ma-3" size="125" tile>
-                      <v-img :src="item.src"></v-img>
-                    </v-avatar>
-                  </div>
-                </v-card>
-              </v-col>
-
-              <v-col cols="12" md="6">
-                <v-card dark>
-                  <div class="d-flex flex-no-wrap justify-space-between">
-                    <div>
-                      <v-card-title class="headline" v-text="item.title"></v-card-title>
-
-                      <v-card-subtitle v-text="item.artist"></v-card-subtitle>
-                    </div>
-
-                    <v-avatar class="ma-3" size="125" tile>
-                      <v-img :src="item.src"></v-img>
+                      <v-img :src="ph_stat.src"></v-img>
                     </v-avatar>
                   </div>
                 </v-card>
@@ -64,7 +51,30 @@ export default {
 
   data: () => ({
     drawer: null,
-    ph_stats: {
+    ph_stats : [
+      {
+        title : `Today's COVID-19 Cases`,
+        data: 106,
+        src: "https://cdn.vuetifyjs.com/images/cards/foster.jpg",
+      },
+      {
+        title : `Total COVID-19 Cases in the Philippines`,
+        data: 3870,
+        src: "https://cdn.vuetifyjs.com/images/cards/foster.jpg",
+      },
+      {
+        title : `Number Active Patients`,
+        data: 3592,
+        src: "https://cdn.vuetifyjs.com/images/cards/foster.jpg",
+      },
+      {
+        title : `Total Number of Recovered Patients`,
+        data: 96,
+        src: "https://cdn.vuetifyjs.com/images/cards/foster.jpg",
+      },
+    ],
+    ph_: {
+
       updated: 1586367093695,
       cases: 3870,
       todayCases: 106,
