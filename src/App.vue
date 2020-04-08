@@ -22,7 +22,7 @@
                     </div>
 
                     <v-avatar class="ma-3" size="125" tile>
-                      <v-img :src="ph_stat.src"></v-img>
+                      A
                     </v-avatar>
                   </div>
                 </v-card>
