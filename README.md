@@ -1,4 +1,8 @@
 # covid19ph
+    
+    Simple Covid19 Dashboard Designed for Philippines Current Covid19 Data
+
+    Developed By: Lei
 
 ## Project setup
 ```
@@ -19,6 +23,3 @@ npm run build
 ```
 npm run lint
 ```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
